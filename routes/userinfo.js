@@ -26,7 +26,7 @@ userinforouter.route('/:id/:token')
                 res.sendStatus(403)
                 
             }else{
-                Userinfo.find({ Email: req.params.id } )
+                Userinfo.find({ "Email": req.params.id } )
                 
                 .then((user)=>{
                     console.log(user)
@@ -38,7 +38,9 @@ userinforouter.route('/:id/:token')
 
                     }else{
                         err = new Error('user ' + req.params.id + ' not found');
+                        console.log(err)
                         err.status = 404;
+                       
                         return next(err)
                     }
 

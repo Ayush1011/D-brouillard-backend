@@ -33,10 +33,9 @@ signuprouter.route('/')
         console.log("user created")
         res.statusCode=200
         
-        res.json(ascessToken)
-
+        res.send({key:ascessToken,pp:" "});
      },(err) => console.log(err))
-    .catch((err) => next(err));
+    .catch((err) => console.log(err));
 
 
 })
