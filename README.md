@@ -10,7 +10,9 @@ git clone https://github.com/Ayush1011/D-brouillard-backend
 Server for Debrouillard :-
 
 Node js with express framework is used for structring.
+
 Mongo DB Atlas for database .
+
 firebase cloud storage for storing files and information of client.
 
 
